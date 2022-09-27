@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.risingtest">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".config.ApplicationClass"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_icon"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/networtk_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RisingTest"
+        tools:ignore="AllowBackup">
+        <activity android:name=".src.main.list.movie.MovieDetailsActivity"></activity>
+        <activity android:name=".src.main.login.SignUpActivity" />
+        <activity android:name=".src.main.login.LoginActivity" />
+        <activity android:name=".src.main.news.CovidActivity" />
+        <activity android:name=".src.main.news.WeatherActivity" />
+        <activity android:name=".src.main.write.MovieWriteActivity" />
+        <activity android:name=".src.main.write.DiaryWriteActivity" />
+        <activity android:name=".src.main.write.TodoWirteActivity" />
+        <activity android:name=".src.main.list.MovieActivity" />
+        <activity android:name=".src.main.list.DiaryActivity" />
+        <activity android:name=".src.main.list.TodoListActivity" />
+        <activity
+            android:name=".src.splash.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".src.main.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="oauth"
+                    android:scheme="kakao2439727cce7af9c5769f07bd1bcd31c5" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wback"
+    android:padding="20dp"
+    tools:context=".src.main.write.DiaryWriteActivity">
+
+    <EditText
+        android:id="@+id/diarywrite"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/diarynote"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textCursorDrawable="@color/black"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+    </EditText>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="60dp"
+        android:layout_width="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:src="@drawable/save"
+        app:layout_constraintTop_toBottomOf="@+id/diarywrite">
+
+    </androidx.appcompat.widget.AppCompatImageView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
