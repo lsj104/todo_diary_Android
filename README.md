@@ -42,7 +42,7 @@ Sqlite를 이용해 저장
 <img width="30%" alt="스크린샷 2022-09-27 오전 1 29 57" src="https://user-images.githubusercontent.com/75536654/192445527-5aafa297-9af5-4afa-ba4e-b4cc6cde619d.png">
 
 #### 2. 가장 인기 있는 영화
-- TMDI API를 이용해 가장 인기 있는 영화를 조회
+- TMDB API를 이용해 가장 인기 있는 영화를 조회
 - recyclerview를 이용해 영화 포스터와 제목을 보여줌
 
 <img width="30%" alt="스크린샷 2022-09-27 오전 1 30 05" src="https://user-images.githubusercontent.com/75536654/192445870-d4f97295-6d60-4d53-bf2d-12d4f39bd76b.png">
